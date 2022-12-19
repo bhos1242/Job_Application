@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apply_box {
+  max-width: 600px;
+  padding: 30px;
+  background: #dddd;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.3);
+  border-radius: 10px;
+
+  /* width: 900px;
+height: 1061px;
+left: 270px;
+top: 27px;
+
+background: #FFFFFF;
+border-radius: 13px; */
+}
+
+.apply_box span {
+  font-size: 20px;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline-color: red;
+}
+
+.button_container {
+
+  display: flex;
+
+  justify-content: flex-end;
+  margin-top: 20px;
+
+}
+
+button {
+  width: 168px;
+  height: 46px;
+  left: 971px;
+  top: 1018px;
+
+  background: #ff0000;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+button:hover{
+    background: #cccc;
+    border: 2px solid #ff0000;
+    color: black;
+}
+
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+
+/* .blink{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: magenta;
+}
+.blink h3{
+    color: white;
+    animation: blink 1s linear infinite;
+} */
+/* Media query */
+@media (max-width:460px){
+    .textarea_control{
+        grid-column: 1 / span 1;
+    }
+}
+
+.blink{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+.blink span{
+    font-size: 25px;
+    font-family: cursive;
+    color: red;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
